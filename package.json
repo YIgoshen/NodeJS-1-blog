@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "dependencies": {
     "ckeditor4": "^4.17.2",
